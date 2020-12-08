@@ -6,7 +6,7 @@ import com.example.projetmobile4a.domain.entity.User
 class CreateUserUseCase(
     private val userRepository: UserRepository
 ) {
-    suspend fun invoke(email : String) : User?{
-        return userRepository.getUser(email)
+    suspend fun invoke(user : User){
+        userRepository.createUser(user)
     }
 }

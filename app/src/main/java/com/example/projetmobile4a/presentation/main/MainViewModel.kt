@@ -18,6 +18,7 @@ class MainViewModel(
 
     fun onClickedLogin(emailUser: String, password: String) {
         viewModelScope.launch(Dispatchers.IO) {
+            // je peux ajouter comme foncitonnalité -> quand pas de Login ou mdp entré message d'erreur ou bouton login grisé
             val user = getUserUseCase.invoke(emailUser)
             val loginStatus= if(user != null){
                 LoginSuccess(user.email)
