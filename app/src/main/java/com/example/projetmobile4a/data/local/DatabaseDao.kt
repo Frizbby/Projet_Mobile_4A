@@ -19,4 +19,5 @@ interface DatabaseDao {
 
     @Delete
     fun delete(user: UserLocal)
+
 }

@@ -1,7 +1,7 @@
 package com.example.projetmobile4a.presentation.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.projetmobile4a.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -39,5 +39,14 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+   /* private fun insertDataToDatabase(){
+        val email = login_edit.text.toString()
+        val user = User(email)
+
+        mUserViewModel.addUser(user)
+
+
+    }*/
 
 }
