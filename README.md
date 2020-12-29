@@ -43,8 +43,8 @@
     <li>Page de bienvenue de l'application avec un bouton "ENTRER"</li>
   </ul>
   <p>
-    <a href="https://github.com/Frizbby/Projet_Mobile_4A/images/home.png">
-      <img src="https://github.com/Frizbby/Projet_Mobile_4A/images/home.png" alt="splash" style="max-width: 100%">
+    <a href="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/home.png">
+      <img src="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/home.png" alt="splash" style="max-width: 100%">
     </a>
   </p>
 <h3>Page de connexion</h3>
