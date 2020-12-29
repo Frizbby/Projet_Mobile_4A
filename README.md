@@ -28,7 +28,7 @@
 <h2>Consignes respectées</h2>
 
 <ul>
-  <li>Language Kotlin / Swift si iOS</li>
+  <li>Language Kotlin</li>
   <li>Architecture MVVM</li>
   <li>Clean Architecture</li>
   <li>Utilisation d’une réelle BDD</li>
