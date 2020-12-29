@@ -63,7 +63,7 @@
 
   </ul>
   <p>
-    <a href="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/Pokédex.png">
-      <img src="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/Pokédex.png" alt="splash" style="max-width: 100%">
+    <a href="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/pokédex.png">
+      <img src="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/pokédex.png" alt="splash" style="max-width: 100%">
     </a>
   </p>
