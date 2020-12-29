@@ -53,8 +53,8 @@
     <li>Il peut ensuite se login en utilisant un couple email+mot de passe existant afin de se connecter et afficher la page suivante</li>
   </ul>
   <p>
-    <a href="https://github.com/Frizbby/ProjetMobile/blob/master/ImageGithub/Page_Principale.png">
-      <img src="https://github.com/Frizbby/ProjetMobile/blob/master/ImageGithub/Page_Principale.png" alt="splash" style="max-width: 100%">
+    <a href="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/connexion.png">
+      <img src="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/connexion.png" alt="splash" style="max-width: 100%">
     </a>
   </p>
 <h3>API rest Pokédex</h3>
@@ -63,7 +63,7 @@
 
   </ul>
   <p>
-    <a href="https://github.com/Frizbby/ProjetMobile/blob/master/ImageGithub/Page_D%C3%A9tail.png">
-      <img src="https://github.com/Frizbby/ProjetMobile/blob/master/ImageGithub/Page_D%C3%A9tail.png" alt="splash" style="max-width: 100%">
+    <a href="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/Pokédex.png">
+      <img src="https://github.com/Frizbby/Projet_Mobile_4A/blob/master/images/Pokédex.png" alt="splash" style="max-width: 100%">
     </a>
   </p>
