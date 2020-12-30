@@ -2,21 +2,30 @@ package com.example.projetmobile4a.presentation.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.projetmobile4a.R
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.android.synthetic.main.activity_main.*
-import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
 
-    val mainViewModel : MainViewModel by inject()
+    // val mainViewModel : MainViewModel by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
-        mainViewModel.loginLiveData.observe(this, Observer {
+        setupActionBarWithNavController(findNavController(R.id.fragment))
+
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragment)
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+
+}
+        /*mainViewModel.loginLiveData.observe(this, Observer {
             when(it){
                 is LoginSuccess -> {
                     // TODO Navigate
@@ -40,13 +49,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-   /* private fun insertDataToDatabase(){
-        val email = login_edit.text.toString()
-        val user = User(email)
+*/
 
-        mUserViewModel.addUser(user)
-
-
-    }*/
-
-}

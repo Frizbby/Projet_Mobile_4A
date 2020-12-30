@@ -1,23 +1,33 @@
 package com.example.projetmobile4a.data.local
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import com.example.projetmobile4a.data.local.models.UserLocal
+//import com.example.projetmobile4a.data.local.models.UserLocal
+import androidx.lifecycle.LiveData
+import androidx.room.*
+import com.example.projetmobile4a.domain.entity.User
+
+
 
 @Dao
 interface DatabaseDao {
-    @Query("SELECT * FROM UserLocal")
-    fun getAll(): List<UserLocal>
+    @Query("SELECT * FROM user_table")
+    fun getAll(): List<User>
 
-    @Query("SELECT * FROM userLocal WHERE email LIKE :email LIMIT 1")
-    fun findByName(email: String): UserLocal?
+    @Query("SELECT * FROM user_table WHERE email LIKE :email LIMIT 1")
+    fun findByName(email: String): User?
 
     @Insert
-    fun insert(user: UserLocal)
+    fun insert(user: User)
 
     @Delete
-    fun delete(user: UserLocal)
+    fun delete(user: User)
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun addUser(user: User)
+
+    @Query("SELECT * FROM user_table ORDER BY uid ASC")
+    fun readAllData(): LiveData<List<User>>
+
+    @Query("SELECT * FROM user_table WHERE email LIKE :email AND password LIKE :password")
+    fun findUserWithName(email: String, password: String): LiveData<List<User>>
 
 }

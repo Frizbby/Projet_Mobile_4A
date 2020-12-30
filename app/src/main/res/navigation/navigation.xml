@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/connexionFragment"
+        android:name="com.example.projetmobile4a.fragments.connexion.ConnexionFragment"
+        android:label="Connexion"
+        tools:layout="@layout/Connexion">
+        <action
+            android:id="@+id/action_connexionFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_connexionFragment_to_pokemonList"
+            app:destination="@id/pokemonList" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.projetmobile4a.fragments.ListAPI.SecondFragment"
+        android:label="API"
+        tools:layout="@layout/API" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projetmobile4a.fragments.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/Home">
+        <action
+            android:id="@+id/action_homeFragment_to_connexionFragment"
+            app:destination="@id/connexionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonList"
+        android:name="com.example.projetmobile4a.fragments.ListAPI.PokemonList"
+        android:label="Pokédex"
+        tools:layout="@layout/fragment_pokemon_list" />
+</navigation>
