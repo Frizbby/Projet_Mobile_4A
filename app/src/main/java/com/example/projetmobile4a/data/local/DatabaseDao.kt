@@ -12,8 +12,8 @@ interface DatabaseDao {
     @Query("SELECT * FROM user_table")
     fun getAll(): List<User>
 
-    @Query("SELECT * FROM user_table WHERE email LIKE :email LIMIT 1")
-    fun findByName(email: String): User?
+    @Query("SELECT * FROM user_table WHERE password LIKE :password LIMIT 1")
+    fun findByName(password: String): User?
 
     @Insert
     fun insert(user: User)
@@ -28,6 +28,6 @@ interface DatabaseDao {
     fun readAllData(): LiveData<List<User>>
 
     @Query("SELECT * FROM user_table WHERE email LIKE :email AND password LIKE :password")
-    fun findUserWithName(email: String, password: String): LiveData<List<User>>
+    fun findUserWithName(email: String, password: String): User?
 
 }

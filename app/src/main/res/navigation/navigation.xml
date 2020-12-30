@@ -35,5 +35,9 @@
         android:id="@+id/pokemonList"
         android:name="com.example.projetmobile4a.fragments.ListAPI.PokemonList"
         android:label="Pokédex"
-        tools:layout="@layout/fragment_pokemon_list" />
+        tools:layout="@layout/fragment_pokemon_list" >
+        <action
+            android:id="@+id/action_pokemonList_to_connexionFragment"
+            app:destination="@id/connexionFragment" />
+    </fragment>
 </navigation>
