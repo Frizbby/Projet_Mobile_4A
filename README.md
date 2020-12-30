@@ -49,7 +49,7 @@
   </p>
 <h3>Page de connexion</h3>
   <ul>
-    <li>L'utilisateur peut rentrer un email et un mot de passe et l'enregsitrer dans la base de donnée locale ROOM</li>
+    <li>L'utilisateur peut rentrer un email et un mot de passe et l'enregsitrer dans la base de données locale ROOM</li>
     <li>Il peut ensuite se login en utilisant un couple email+mot de passe existant afin de se connecter et afficher la page suivante</li>
   </ul>
   <p>
